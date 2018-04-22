@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+* {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #4F4F4F; }
+
+form {
+  margin: 30px 0; }
+  form .text-input {
+    border: none;
+    border-bottom: 2px solid #152A6D;
+    width: 93%;
+    padding: 10px;
+    font-size: 1em;
+    color: #A8A8A8;
+    margin-bottom: 10px; }
+  form button[type=submit] {
+    padding: 10px 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    margin-top: 20px;
+    background-color: #F9AF00;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    cursor: pointer; }
+  form h2 {
+    margin-bottom: 10px;
+    font-size: 0.9em; }
+  form .submit-cont {
+    text-align: right; }
+
+.register {
+  max-width: 270px;
+  margin: 0 auto;
+  margin-top: 40px; }
+  .register .logo {
+    max-width: 230px; }
+  .register img {
+    width: 100%; }
+  .register .legal p {
+    font-size: 0.9em; }
+    .register .legal p a {
+      text-decoration: underline; }

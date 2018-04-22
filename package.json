@@ -1,23 +1,31 @@
 {
-  "name": "TrainingPlatformSimdesign",
+  "name": "simdesigninformationsystem",
   "version": "1.0.0",
-  "description": "Plataforma de entrenamiento simdesign",
+  "description": "Sistema de información de Simdesign",
   "main": "index.html",
-  "scripts": {},
-  "author": "Jeronimo Yepes",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "run-sequence": "^2.2.0"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeronimoyepes/smdsgnIS.git"
+  },
+  "author": "Jerónimo Yepes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeronimoyepes/smdsgnIS/issues"
+  },
+  "homepage": "https://github.com/jeronimoyepes/smdsgnIS#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-jshint": "^2.0.4",
-    "gulp-sass": "^3.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
     "gulp-uglify": "^3.0.0",
     "jshint": "^2.9.5",
-    "pump": "^1.0.2"
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.1"
   }
 }

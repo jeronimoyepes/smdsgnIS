@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Simdesign: Sistema de información</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <div class="register">
+        <div class="logo">
+            <img src="img/logo.svg" alt="Simdesign">
+        </div>
+        <form action="POST">
+            <h2>Registro</h2>
+            <input class="text-input" placeholder="Correo electrónico" type="email" name="email" id="email">
+            <input class="text-input" placeholder="Contraseña" type="password" name="password" id="password">
+            <input class="text-input" placeholder="Repetir contraseña" type="password" name="re-password" id="re-password">
+            <div class="submit-cont">
+                <button type="submit">Registrarse</button>
+            </div>
+        </form>
+        <div class="legal">
+            <p>Al registrarse usted acepta nuestros <a href="#">Términos y Condiciones</a> y <a href="#">Política de Privacidad</a></p>
+        </div>
+    </div>
 </body>
 </html>
