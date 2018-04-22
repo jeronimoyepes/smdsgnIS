@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="login">
+    <div class="register">
         <div class="logo">
             <img src="img/logo.svg" alt="Simdesign">
         </div>
         <form action="POST">
-            <h2>Inicio de sesión</h2>
+            <h2>Registro</h2>
+            <input class="text-input" placeholder="Nombre" type="text" name="user-name" id="user-name">
+            <select class="text-input" name="user-specialty">
+                <option value="null">Especialidad</option>
+                <option value="neurocirugia">Neurocirugía</option>
+                <option value="cirugia-plastica">Cirugía plastica</option>
+                <option value="cardiologia">Cardiología</option>
+            </select>
             <input class="text-input" placeholder="Correo electrónico" type="email" name="email" id="email">
             <input class="text-input" placeholder="Contraseña" type="password" name="password" id="password">
+            <input class="text-input" placeholder="Repetir contraseña" type="password" name="re-password" id="re-password">
+            
             <div class="submit-cont">
-                <button type="submit">Iniciar sesión</button>
+                <button type="submit">Registrarse</button>
             </div>
         </form>
-        <a class="option" href="register.html">Registrarse</a>
+        <a class="option" href="index.html">Iniciar sesión</a>
         <div class="legal">
             <p>Al registrarse usted acepta nuestros <a href="#">Términos y Condiciones</a> y <a href="#">Política de Privacidad</a></p>
         </div>

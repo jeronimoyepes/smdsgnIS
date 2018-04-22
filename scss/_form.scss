@@ -1,5 +1,4 @@
 form {
-    margin: 30px 0;
     .text-input {
         border: none;
         border-bottom: 2px solid $blue;
@@ -19,6 +18,9 @@ form {
         font-weight: 500;
         letter-spacing: 0.01em;
         cursor: pointer;
+    }
+    select {
+        width: 100% !important;
     }
     h2 {
         margin-bottom: 10px;

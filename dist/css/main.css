@@ -9,44 +9,57 @@
   text-decoration: none;
   color: #4F4F4F; }
 
-form {
-  margin: 30px 0; }
-  form .text-input {
-    border: none;
-    border-bottom: 2px solid #152A6D;
-    width: 93%;
-    padding: 10px;
-    font-size: 1em;
-    color: #A8A8A8;
-    margin-bottom: 10px; }
-  form button[type=submit] {
-    padding: 10px 20px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    border-radius: 100px;
-    margin-top: 20px;
-    background-color: #F9AF00;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    cursor: pointer; }
-  form h2 {
-    margin-bottom: 10px;
-    font-size: 0.9em; }
-  form .submit-cont {
-    text-align: right; }
+form .text-input {
+  border: none;
+  border-bottom: 2px solid #152A6D;
+  width: 93%;
+  padding: 10px;
+  font-size: 1em;
+  color: #A8A8A8;
+  margin-bottom: 10px; }
 
-.register {
+form button[type=submit] {
+  padding: 10px 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  margin-top: 20px;
+  background-color: #F9AF00;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  cursor: pointer; }
+
+form select {
+  width: 100% !important; }
+
+form h2 {
+  margin-bottom: 10px;
+  font-size: 0.9em; }
+
+form .submit-cont {
+  text-align: right; }
+
+.login, .register {
   max-width: 270px;
   margin: 0 auto;
-  margin-top: 40px; }
-  .register .logo {
-    max-width: 230px; }
-  .register img {
+  margin-top: 60px; }
+  .login .logo, .register .logo {
+    max-width: 300px;
+    margin-bottom: 50px; }
+  .login img, .register img {
     width: 100%; }
-  .register .legal p {
-    font-size: 0.9em; }
-    .register .legal p a {
-      text-decoration: underline; }
+  .login .legal, .register .legal {
+    margin-bottom: 40px; }
+    .login .legal p, .register .legal p {
+      font-size: 0.9em; }
+      .login .legal p a, .register .legal p a {
+        text-decoration: underline; }
+  .login .option, .register .option {
+    display: block;
+    margin: 20px 0;
+    text-decoration: underline;
+    font-weight: 500;
+    color: #152A6D; }

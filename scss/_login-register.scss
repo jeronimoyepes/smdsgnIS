@@ -1,0 +1,28 @@
+.login, .register {
+    max-width: 270px;
+    margin: 0 auto;
+    margin-top: 60px;
+    .logo {
+        max-width: 300px;
+        margin-bottom: 50px;    
+    }
+    img{
+        width: 100%;
+    }
+    .legal{
+        margin-bottom: 40px;
+        p {
+            font-size: 0.9em;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    .option {
+        display: block;
+        margin: 20px 0;
+        text-decoration: underline;
+        font-weight: 500;
+        color: $blue;
+    }
+}
