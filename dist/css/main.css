@@ -9,6 +9,24 @@
   text-decoration: none;
   color: #4F4F4F; }
 
+.cont-left {
+  overflow: hidden;
+  max-width: 250px;
+  margin-bottom: 20px; }
+  .cont-left .logo {
+    margin: 10px; }
+    .cont-left .logo img {
+      width: 230px; }
+  .cont-left .project-btn {
+    display: block;
+    background-color: #F9AF00;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0; }
+
 form .text-input {
   border: none;
   border-bottom: 2px solid #152A6D;
@@ -17,6 +35,12 @@ form .text-input {
   font-size: 1em;
   color: #A8A8A8;
   margin-bottom: 10px; }
+
+form textarea {
+  width: 93%;
+  max-width: 93%;
+  min-height: 60px;
+  max-height: 200px; }
 
 form button[type=submit] {
   padding: 10px 20px;
@@ -35,8 +59,18 @@ form button[type=submit] {
 form select {
   width: 100% !important; }
 
+form .small {
+  font-size: 0.8em;
+  color: #A8A8A8; }
+
+form .error {
+  font-size: 0.8em;
+  color: #A8A8A8;
+  color: #b40000;
+  margin-bottom: 10px; }
+
 form h2 {
-  margin-bottom: 10px;
+  margin: 20px 0 10px 0;
   font-size: 0.9em; }
 
 form .submit-cont {
@@ -63,3 +97,87 @@ form .submit-cont {
     text-decoration: underline;
     font-weight: 500;
     color: #152A6D; }
+
+.create-project {
+  max-width: 300px;
+  margin: 0 auto 70px auto;
+  margin-top: 60px; }
+  .create-project h1 {
+    font-size: 1.6em;
+    margin-bottom: 30px; }
+  .create-project .project-images {
+    margin-bottom: 10px; }
+    .create-project .project-images div {
+      display: inline-block;
+      margin-right: -4px;
+      vertical-align: middle;
+      text-align: center;
+      padding: 25px;
+      cursor: pointer; }
+      .create-project .project-images div img {
+        width: 50px;
+        height: 50px; }
+    .create-project .project-images .active {
+      padding: 15px; }
+      .create-project .project-images .active img {
+        width: 70px;
+        height: 70px; }
+    .create-project .project-images div:hover {
+      padding: 15px; }
+      .create-project .project-images div:hover img {
+        width: 70px;
+        height: 70px; }
+  .create-project form input[name=project-guest-email] {
+    width: 215px;
+    margin-right: 10px;
+    vertical-align: middle; }
+  .create-project form .add-user {
+    margin-right: -4px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 50px; }
+    .create-project form .add-user img {
+      width: 100%; }
+  .create-project form .submit-cont {
+    margin-top: 10px;
+    float: none;
+    text-align: center; }
+    .create-project form .submit-cont button {
+      padding: 10px 30px; }
+  .create-project .guest-group {
+    margin-bottom: 20px; }
+    .create-project .guest-group .guest {
+      display: inline-block;
+      padding-right: 10px;
+      margin: 5px 5px 0 0;
+      background-color: #EFEFEF;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px; }
+      .create-project .guest-group .guest .profile-pic {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+      .create-project .guest-group .guest .icon {
+        vertical-align: middle;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: -4px; }
+        .create-project .guest-group .guest .icon img {
+          margin-top: 2.5px;
+          height: 15px;
+          width: 15px; }
+      .create-project .guest-group .guest .name {
+        display: inline-block;
+        font-size: 0.9em; }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simdesign: Sistema de información</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Comienza Panel izquierdo donde esta el logo el botón de proyectos y el arbol de pasos de un proyecto (en esta pantalla como no hay un proyecto abierto no se muestra el arbol) -->
+    <div class="cont-left">
+        <div class="logo">
+            <img src="img/logo.svg" alt="Simdesign">
+        </div>
+        <a class="project-btn" href="#">Proyectos</a>
+    </div>
+
+    <!-- // Termina panel izquierdo -->
+
+    <!-- Comienza Contenedor principal (el del centro) -->
+    <div class="cont-main">
+        <div class="create-project">
+
+            <h1>Crear proyecto</h1>
+
+            <form action="POST">
+                <input class="text-input" placeholder="Nombre del proyecto" type="text" name="project-name" id="project-name">
+                
+                <textarea class="text-input" name="project-description" id="project-description" placeholder="Descripción del proyecto" maxlength="200"></textarea>
+                
+                <span class="small">Máximo 200 caracteres</span>
+                
+                <h2>Imagen del proyecto</h2>
+
+                <div class="project-images">
+                    <!-- la clase active ↓ es para la imagen que este seleccionada -->
+                    <div class="case active" style="background-color: #56D8D8;"><img src="img/project-images/case.svg" alt=""></div>
+                    <div class="heart" style="background-color: #EDB426;"><img src="img/project-images/heart.svg" alt=""></div>
+                    <div class="micro" style="background-color: #DB5526;"><img src="img/project-images/micro.svg" alt=""></div>
+                    <div class="pill" style="background-color: #4963F7;"><img src="img/project-images/pill.svg" alt=""></div>
+                    <div class="symbol" style="background-color: #6DB83A;"><img src="img/project-images/symbol.svg" alt=""></div>
+                    <div class="lung" style="background-color: #923DD7;"><img src="img/project-images/lung.svg" alt=""></div>
+                
+                </div>
+                <h2>Invitar colaboradores</h2>
+                
+                <input class="text-input" placeholder="Email" type="text" name="project-guest-email" id="project-guest-email">
+                <a class="add-user" href="#" title="invitar colaborador"><img src="img/icons/add-user.svg" alt="Agregar"></a>
+                
+                <div class="guest-group">
+
+                    <!-- Inicia invitado al proyecto -->
+                    <a class="guest" href="#">
+                        <!-- foto de perfil del invitado -->
+                        <div class="profile-pic" style="background-image: url(img/photos/profile.jpg)"></div>
+                        <!-- Si el invitado no tiene un icono como por ejemplo la llave de administrador se elimina el contenedor .icon -->
+                        <div class="icon" title="administrador">
+                            <img src="img/icons/admin.svg" alt="A">
+                        </div>
+                        <p class="name">Christian D.</p>
+                    </a>
+                    <!-- //Termina invitado al proyecto -->
+                    
+                    <a class="guest" href="#">
+                        <div class="profile-pic" style="background-image: url(img/photos/profile.jpg)"></div>
+                        <p class="name">Jerónimo Y.</p>
+                    </a>
+
+                    <a class="guest" href="#">
+                        <div class="profile-pic" style="background-image: url(img/photos/profile.jpg)"></div>
+                        <p class="name">Santiago A.</p>
+                    </a>
+
+                </div>
+
+                <!-- Mensaje de error -->
+                <p class="error">No encontramos a esta persona, quiza el correo electrónico que escribiste no es correcto.</p>
+
+                <p class="small">Los invitados serán agregados al proyecto en cuanto acepten la invitación</p>
+                
+                <div class="submit-cont">
+                        <button type="submit">Crear</button>
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
+    <!-- // Termina Contenedor principal (el del centro) -->
+
+
+    <!-- Comienza Panel de la derecha, donde se abren las notificaciones -->
+    <div class="cont-right">
+        
+    </div>
+    <!-- // Termina Panel de la derecha, donde se abren las notificaciones -->
+</body>
+</html>

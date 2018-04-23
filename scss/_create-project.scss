@@ -1,0 +1,99 @@
+.create-project {
+    max-width: 300px;
+    margin: 0 auto 70px auto;
+    margin-top: 60px;
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+    .project-images {
+        margin-bottom: 10px;
+        div {
+            display: inline-block;
+            margin-right: -4px;
+            vertical-align: middle;
+            text-align: center;
+            padding: 25px;
+            cursor: pointer;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .active {
+            padding: 15px;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        div:hover {
+            padding: 15px;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+    form {
+        input[name=project-guest-email] {
+            width: 215px;
+            margin-right: 10px;
+            vertical-align: middle;            
+        }
+        .add-user {
+            margin-right: -4px;
+            vertical-align: middle;
+            display: inline-block;
+            width: 50px;
+            img {
+                width: 100%;
+            }
+        }
+        .submit-cont {
+            margin-top: 10px;
+            float: none;
+            text-align: center;
+            button {
+                padding: 10px 30px;
+            }
+        }
+    }
+    .guest-group {
+        margin-bottom: 20px;
+        .guest {
+            display: inline-block;
+            padding-right: 10px;
+            margin: 5px 5px 0 0;
+            background-color: $light-gray;
+            @include border-radius (100px);
+            .profile-pic {
+                width: 20px;
+                height: 20px;
+                margin-right: 2px;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;                
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include border-radius (50%);
+            }
+            .icon {
+                vertical-align: middle;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: -4px;
+                img {
+                    margin-top: 2.5px;
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+            .name {
+                display: inline-block;
+                font-size: 0.9em;
+            }
+        }
+    }
+}

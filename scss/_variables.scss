@@ -3,6 +3,12 @@ $yellow: #F9AF00;
 $gray: #4F4F4F;
 $medium-gray: #A8A8A8;
 $light-gray: #EFEFEF;
+$proy-image-zyan: #56D8D8;
+$proy-image-yellow: #EDB426;
+$proy-image-orange: #DB5526;
+$proy-image-blue: #4963F7;
+$proy-image-green: #6DB83A;
+$proy-image-purple: #923DD7;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;

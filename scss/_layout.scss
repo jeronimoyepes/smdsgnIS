@@ -1,0 +1,30 @@
+.cont-left {
+    // display: none;   
+    overflow: hidden;
+    max-width: 250px;
+    margin-bottom: 20px;
+    .logo {
+        margin: 10px;
+        img {
+            width: 230px;
+        }
+    }
+    .project-btn {
+        display: block;
+        background-color: $yellow;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        padding: 10px;
+        -webkit-border-radius: 0 100px 100px 0;
+        border-radius: 0 100px 100px 0;
+    }
+}
+
+.cont-main {
+
+}
+
+.cont-right {
+
+}
