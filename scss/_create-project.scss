@@ -1,7 +1,6 @@
 .create-project {
     max-width: 300px;
-    margin: 0 auto 70px auto;
-    margin-top: 60px;
+    margin: 50px auto 50px auto;
     h1 {
         font-size: 1.6em;
         margin-bottom: 30px;
@@ -95,5 +94,39 @@
                 font-size: 0.9em;
             }
         }
+    }
+}
+
+@media (min-width: 992px) {
+    .create-project {
+        .project-images {
+            div {
+                padding: 10px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .active {
+                padding: 5px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            div:hover {
+                padding: 5px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .create-project {
+        margin-top: 120px;
     }
 }

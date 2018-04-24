@@ -1,0 +1,1 @@
+$(document).ready(function(i){function n(){991<i(window).width()?i(".cont-main").width(function(){return i(".wrapper").width()-(i(".cont-left").width()+i(".cont-right").width())}):i(".cont-main").width("initial")}n(),i(window).resize(function(){n()})});

@@ -9,9 +9,12 @@
   text-decoration: none;
   color: #4F4F4F; }
 
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto; }
+
 .cont-left {
   overflow: hidden;
-  max-width: 250px;
   margin-bottom: 20px; }
   .cont-left .logo {
     margin: 10px; }
@@ -26,6 +29,87 @@
     padding: 10px;
     -webkit-border-radius: 0 100px 100px 0;
     border-radius: 0 100px 100px 0; }
+
+.cont-right {
+  margin-top: 15px; }
+  .cont-right .noti-bar {
+    height: 30px;
+    border-bottom: 1px solid #A8A8A8; }
+    .cont-right .noti-bar .profile, .cont-right .noti-bar .notification, .cont-right .noti-bar .config {
+      display: inline-block;
+      vertical-align: middle; }
+    .cont-right .noti-bar .profile {
+      margin-right: 20px;
+      cursor: pointer; }
+      .cont-right .noti-bar .profile a {
+        display: inline-block;
+        vertical-align: middle; }
+        .cont-right .noti-bar .profile a img {
+          width: 100%;
+          height: 100%; }
+      .cont-right .noti-bar .profile .pic-name {
+        height: 20px; }
+        .cont-right .noti-bar .profile .pic-name img {
+          width: 20px;
+          vertical-align: middle; }
+        .cont-right .noti-bar .profile .pic-name p {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 0.9em; }
+      .cont-right .noti-bar .profile .arrow {
+        height: 10px;
+        width: 10px;
+        padding: 3px; }
+        .cont-right .noti-bar .profile .arrow img {
+          display: block; }
+    .cont-right .noti-bar .notification {
+      cursor: pointer;
+      margin-right: 20px; }
+      .cont-right .noti-bar .notification .icon img {
+        height: 17px; }
+      .cont-right .noti-bar .notification .icon span {
+        border: 2px solid #F9AF00;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        border-radius: 100%;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        text-align: center;
+        line-height: 14px;
+        font-size: 0.8em;
+        font-weight: 800;
+        color: #4F4F4F;
+        background-color: #fff;
+        margin-left: -13px;
+        vertical-align: top;
+        margin-top: -8px; }
+    .cont-right .noti-bar .config {
+      cursor: pointer; }
+      .cont-right .noti-bar .config a {
+        display: inline-block;
+        height: 20px; }
+        .cont-right .noti-bar .config a img {
+          height: 100%; }
+
+@media (min-width: 992px) {
+  .cont-left {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+    width: 250px; }
+    .cont-left .project-btn {
+      margin-right: 20px; }
+  .cont-main {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px; }
+  .cont-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+    width: 300px; } }
 
 form .text-input {
   border: none;
@@ -70,7 +154,7 @@ form .error {
   margin-bottom: 10px; }
 
 form h2 {
-  margin: 20px 0 10px 0;
+  margin: 40px 0 10px 0;
   font-size: 0.9em; }
 
 form .submit-cont {
@@ -100,8 +184,7 @@ form .submit-cont {
 
 .create-project {
   max-width: 300px;
-  margin: 0 auto 70px auto;
-  margin-top: 60px; }
+  margin: 50px auto 50px auto; }
   .create-project h1 {
     font-size: 1.6em;
     margin-bottom: 30px; }
@@ -181,3 +264,24 @@ form .submit-cont {
       .create-project .guest-group .guest .name {
         display: inline-block;
         font-size: 0.9em; }
+
+@media (min-width: 992px) {
+  .create-project .project-images div {
+    padding: 10px; }
+    .create-project .project-images div img {
+      width: 30px;
+      height: 30px; }
+  .create-project .project-images .active {
+    padding: 5px; }
+    .create-project .project-images .active img {
+      width: 40px;
+      height: 40px; }
+  .create-project .project-images div:hover {
+    padding: 5px; }
+    .create-project .project-images div:hover img {
+      width: 40px;
+      height: 40px; } }
+
+@media (min-width: 1200px) {
+  .create-project {
+    margin-top: 120px; } }
