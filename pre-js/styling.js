@@ -1,19 +1,46 @@
 $(document).ready(function($) {
-    
-    // Hacer que el contenedor del contenido principal sea igual al ancho de la ventana menos el ancho de los contenedores de los lados 
-    function layoutResizing () {
-        if ($(window).width() > 991) {
-            $(".cont-main").width(function () {
-                return $(".wrapper").width() - ($(".cont-left").width() + $(".cont-right").width());
-            })
+
+    var mediaQueryTablet = 991;
+
+    // Hacer que el contenedor del contenido principal sea igual al ancho de la ventana menos el ancho de los contenedores de los lados
+    function resizeMainCont (offset) {
+        $(".cont-main").width(function () {
+            return $(".wrapper").width() - ($(".cont-left").width() + $(".cont-right").width()) - offset;
+        });
+    } resizeMainCont (0);
+
+    function changeContRightPosition () {
+        if ($(window).width() < mediaQueryTablet) {
+            $(".cont-right").insertBefore($(".cont-main"))
         }else {
-            $(".cont-main").width("initial");
+            $(".cont-right").insertAfter($(".cont-main"))
         }
-    }layoutResizing ();
+    } changeContRightPosition ()
     
     // registrar el cambio de tamaño de la pantalla
     $(window).resize(function () {
-        layoutResizing();
+
+        if ($(window).width() > mediaQueryTablet) {
+
+            resizeMainCont (0)
+
+        }else {
+
+            $(".cont-main").width("initial");
+
+        }
+
+        changeContRightPosition();
+
     });
+
+    setInterval(function () {
+        if ($(window).width() > mediaQueryTablet) { 
+            resizeMainCont (0)
+        } else {
+            $(".cont-main").width("initial")
+        }
+    }, 100)
+
     
 });

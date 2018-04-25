@@ -4,6 +4,7 @@
 }
 
 .cont-left {
+    width: 250px;
     overflow: hidden;
     margin-bottom: 20px;
     .logo {
@@ -21,6 +22,7 @@
         padding: 10px;
         -webkit-border-radius: 0 100px 100px 0;
         border-radius: 0 100px 100px 0;
+        max-width: 270px;
     }
 }
 
@@ -29,6 +31,7 @@
 
 .cont-right {
     margin-top: 15px;
+    text-align: center;
     .noti-bar {
         height: 30px;
         border-bottom: 1px solid $medium-gray;
@@ -112,10 +115,6 @@
         display: inline-block;
         vertical-align: top;
         margin-right: -4px;
-        width: 250px;
-        .project-btn {
-            margin-right: 20px;
-        }
     }
     .cont-main {
         display: inline-block;
@@ -127,6 +126,9 @@
         vertical-align: top;
         margin-right: -4px;
         width: 300px;
+        .noti-bar {
+            text-align: left;
+        }
     }
 }
 
