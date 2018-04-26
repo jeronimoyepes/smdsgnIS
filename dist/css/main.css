@@ -290,3 +290,120 @@ form .submit-cont {
 @media (min-width: 1200px) {
   .create-project {
     margin-top: 120px; } }
+
+.proj-list {
+  margin: 50px auto 0 auto;
+  max-width: 700px; }
+  .proj-list .title {
+    padding: 0 20px;
+    margin-bottom: 20px; }
+    .proj-list .title h1 {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+      margin-bottom: 10px; }
+    .proj-list .title .icon-btn {
+      background-color: #F9AF00;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      padding: 7px 20px;
+      display: inline-block;
+      vertical-align: middle; }
+      .proj-list .title .icon-btn p {
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px; }
+      .proj-list .title .icon-btn img {
+        display: inline-block;
+        height: 20px;
+        vertical-align: middle; }
+  .proj-list .list {
+    text-align: center; }
+    .proj-list .list .project {
+      padding: 30px 0;
+      border-top: 2px solid #A8A8A8; }
+      .proj-list .list .project .img {
+        border: 3px solid #fff;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        background-color: #152A6D;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block; }
+      .proj-list .list .project .name {
+        margin-bottom: 20px;
+        display: block; }
+        .proj-list .list .project .name p {
+          font-weight: 600;
+          font-size: 1.15em; }
+      .proj-list .list .project .info {
+        margin-bottom: 40px; }
+      .proj-list .list .project .actions a {
+        display: inline-block;
+        vertical-align: middle;
+        width: 35px;
+        height: 35px; }
+        .proj-list .list .project .actions a img {
+          width: 100%;
+          height: 100%; }
+      .proj-list .list .project .actions a:first-child {
+        height: 28px;
+        margin-right: 10px; }
+
+@media (min-width: 991px) {
+  .proj-list {
+    padding: 0 20px;
+    margin-top: 120px; }
+    .proj-list .title {
+      padding: 0; } }
+
+@media (min-width: 1190px) {
+  .proj-list .title .icon-btn {
+    float: right; }
+  .proj-list .list {
+    text-align: left; }
+    .proj-list .list .project {
+      padding: 10px 20px;
+      border: none;
+      background-color: #f1f1f1;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      border-radius: 20px;
+      margin-bottom: 10px; }
+      .proj-list .list .project .img {
+        width: 90px;
+        height: 90px;
+        vertical-align: middle;
+        margin: 0;
+        margin-right: 10px; }
+      .proj-list .list .project .name {
+        display: inline-block;
+        vertical-align: middle;
+        width: 26%;
+        margin: 0;
+        margin-right: 10px; }
+      .proj-list .list .project .info {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        margin: 0;
+        margin-right: 10px; }
+      .proj-list .list .project .actions {
+        display: inline-block;
+        vertical-align: middle;
+        width: 90px;
+        margin: 0;
+        margin-right: 10px; } }

@@ -10,37 +10,30 @@ $(document).ready(function($) {
     } resizeMainCont (0);
 
     function changeContRightPosition () {
-        if ($(window).width() < mediaQueryTablet) {
-            $(".cont-right").insertBefore($(".cont-main"))
+        if ($(window).width() <= mediaQueryTablet) {
+            $(".cont-right").insertBefore($(".cont-main"));
         }else {
-            $(".cont-right").insertAfter($(".cont-main"))
+            $(".cont-right").insertAfter($(".cont-main"));
         }
-    } changeContRightPosition ()
+    } changeContRightPosition ();
     
     // registrar el cambio de tamaño de la pantalla
     $(window).resize(function () {
-
-        if ($(window).width() > mediaQueryTablet) {
-
-            resizeMainCont (0)
-
+        if ($(window).width() >= mediaQueryTablet) {
+            resizeMainCont (0);
         }else {
-
             $(".cont-main").width("initial");
-
-        }
-
+        };
         changeContRightPosition();
-
     });
 
     setInterval(function () {
         if ($(window).width() > mediaQueryTablet) { 
-            resizeMainCont (0)
+            resizeMainCont (0);
         } else {
-            $(".cont-main").width("initial")
+            $(".cont-main").width("initial");
         }
-    }, 100)
+    }, 100);
 
     
 });

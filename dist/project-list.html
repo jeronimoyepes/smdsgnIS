@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simdesign: Sistema de información</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Comienza Panel izquierdo donde esta el logo el botón de proyectos y el arbol de pasos de un proyecto (en esta pantalla como no hay un proyecto abierto no se muestra el arbol) -->
+        <div class="cont-left">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Simdesign">
+            </div>
+            <a class="project-btn" href="#">Proyectos</a>
+        </div>
+        
+        <!-- // Termina panel izquierdo -->
+        
+        <!-- Comienza Contenedor principal (el del centro) -->
+        <div class="cont-main">
+            <div class="proj-list">
+                <div class="title">
+                    <h1>Lista de proyectos</h1>
+                    <!-- Link ↓ para crear proyecto -->
+                    <a href="#" class="icon-btn">
+                        <p>Crear proyecto</p>
+                        <img src="img/icons/plus-white.svg" alt="+">
+                    </a>
+                </div>
+                <!-- Comienza proyecto -->
+                <div class="list">
+                    <div class="project">
+                        <!-- imagen o icono de proyecto -->
+                        <!-- Este ↓ link te lleva al proyecto -->
+                        <a href="" class="img" style="background-image: url('img/photos/profile.jpg')"></a>
+                        <!-- Este ↓ link te lleva al proyecto -->
+                        <a href="#" class="name">
+                            <p>Simulador de procedimientos cardiacos</p>
+                        </a>
+                        <div class="info">
+                            <p>4 integrantes</p>
+                            <p>Creado: 10 marzo 2018</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img src="img/icons/edit.svg" alt=""></a>
+                            <a href="#"><img src="img/icons/bin.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <!-- imagen o icono de proyecto -->
+                        <!-- Este ↓ link te lleva al proyecto -->
+                        <a href="" class="img" style="background-image: url('img/photos/profile.jpg')"></a>
+                        <!-- Este ↓ link te lleva al proyecto -->
+                        <a href="#" class="name">
+                            <p>Simulador de procedimientos cardiacos</p>
+                        </a>
+                        <div class="info">
+                            <p>4 integrantes</p>
+                            <p>Creado: 10 marzo 2018</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img src="img/icons/edit.svg" alt=""></a>
+                            <a href="#"><img src="img/icons/bin.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <!-- imagen o icono de proyecto -->
+                        <!-- Este ↓ link te lleva al proyecto -->
+                        <a href="" class="img" style="background-image: url('img/photos/profile.jpg')"></a>
+                        <!-- Este ↓ link te lleva al proyecto -->
+                        <a href="#" class="name">
+                            <p>Simulador de procedimientos cardiacos</p>
+                        </a>
+                        <div class="info">
+                            <p>4 integrantes</p>
+                            <p>Creado: 10 marzo 2018</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><img src="img/icons/edit.svg" alt=""></a>
+                            <a href="#"><img src="img/icons/bin.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Termina proyecto -->                
+            </div>
+        </div>
+        <!-- // Termina Contenedor principal (el del centro) -->
+        
+        
+        <!-- Comienza Panel de la derecha, donde se abren las notificaciones -->
+        <div class="cont-right">
+            <!-- Comienza barra de los iconos de perfil, notificaión y configuración -->
+            <div class="noti-bar">
+                <div class="profile">
+                    <!-- LLeva ↓ a la pagina de perfil  -->
+                    <a href="#" class="pic-name">
+                        <img src="img/icons/profile.svg" alt="">
+                        <p>Christian D.</p>
+                    </a>
+                    <!-- Despliega ↓ el menú de opciones de perfil -->
+                    <a class="arrow">
+                        <img src="img/icons/arrow-down.svg" alt="↓">
+                    </a>
+                </div>
+                <div class="notification" title="Notificaciones">
+                    <a class="icon">
+                        <img src="img/icons/notification.svg" alt="">
+                        <!-- ↓ cantidad de notificaciones nuevas-->
+                        <span>2</span>
+                    </a>
+                </div>
+                <div class="config" title="Configuración">
+                    <a>
+                        <img src="img/icons/config.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- // Termina barra de los iconos de perfil, notificaión y configuración -->
+            
+        </div>
+        <!-- // Termina Panel de la derecha, donde se abren las notificaciones -->
+    </div>
+</body>
+</html>
