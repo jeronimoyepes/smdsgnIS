@@ -15,12 +15,12 @@ Estructura de carpetas:
     - __photos__   *Fotos de perfil, de proyectos*
     - __project-images__   *iconos usados en la selección de imagen de proyecto*
   * __js__   *scripts*
-  * __create-project.html__   *Pagina donde se crean los proyectos, es la unica donde esta disponible el HTML (además de la plantilla) para la barra (feed) de notificaciones,esto para evitar duplicarlo innecesariamente en otras*
+  * __create-project.html__   *Pagina donde se crean los proyectos, es la unica donde esta disponible el HTML para la barra (feed) de notificaciones, esto para evitar duplicarlo innecesariamente en otras*
   * __index.html__   *Inicio de sesión*
-  * __project-list.html__   *Lista de proyectos en los que hago parte*
-  * __project.html__   *Detalle de proyecto - proyecto abierto*
+  * __project-list.html__   *Lista de proyectos en los que el usuario hace parte*
+  * __project.html__   *Detalle de proyecto*
   * __register.html__   *formulario de registro*
-  * __template.html__   *Plantilla básica de la interfaz*
+  * __template.html__   *Plantilla básica de la interfaz (también contiene el HTML de la barra (feed) de notificaciones)*
   
 * __pre-js__   *archivos de javascript antes de minificar y concatenar es decir editables*
 * __scss__   *archivos de estilos SCSS, antes de convertir a CSS*
