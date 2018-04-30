@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simdesign: Sistema de información</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Comienza Panel izquierdo donde esta el logo el botón de proyectos y el arbol de pasos de un proyecto (en esta pantalla como no hay un proyecto abierto no se muestra el arbol) -->
+        <div class="cont-left">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Simdesign">
+            </div>
+            <a class="project-btn" href="#">Proyectos</a>
+        </div>
+        
+        <!-- // Termina panel izquierdo -->
+        
+        <!-- Comienza Contenedor principal (el del centro) -->
+        <div class="cont-main">
+            <div class="project">
+                <div class="heading">
+                    <h1>Simulador de procedimientos cardiacos</h1>
+                    <p class="date">Creado el 10 de Marzo 2018</p>
+                    <div class="guest-group">
+                        <p class="title">Contribuciones</p>
+                        <!-- Inicia invitado al proyecto -->
+                        <a class="guest" href="#">
+                            <!-- foto de perfil del invitado -->
+                            <div class="profile-pic" style="background-image: url(img/photos/profile.jpg)"></div>
+                            <!-- Si el invitado NO tiene un icono como por ejemplo la llave de administrador se elimina el contenedor .icon -->
+                            <div class="icon" title="administrador">
+                                <img src="img/icons/admin.svg" alt="A">
+                            </div>
+                            <p class="name">Christian D.</p>
+                        </a>
+                        <!-- //Termina invitado al proyecto -->
+                        
+                        <a class="guest" href="#">
+                            <div class="profile-pic" style="background-image: url(img/photos/profile.jpg)"></div>
+                            <p class="name">Jerónimo Y.</p>
+                        </a>
+                        
+                        <a class="guest" href="#">
+                            <div class="profile-pic" style="background-image: url(img/photos/profile.jpg)"></div>
+                            <p class="name">Santiago A.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 id="1">Fase 1 - Identificar</h2>
+                    <h3 id="1.1">1.1 Selección de necesidades</h3>
+                    <section>
+                        <h4>Observaciones</h4>
+                        <div class="contribution">
+                            <div class="main">
+                                <div class="text">
+                                    
+                                </div>
+                                <div class="comment">
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- // Termina Contenedor principal (el del centro) -->
+        
+        
+        <!-- Comienza Panel de la derecha, donde se abren las notificaciones -->
+        <div class="cont-right">
+            <!-- Comienza barra de los iconos de perfil, notificaión y configuración -->
+            <div class="noti-bar">
+                <div class="profile">
+                    <!-- LLeva ↓ a la pagina de perfil  -->
+                    <a href="#" class="pic-name">
+                        <img src="img/icons/profile.svg" alt="">
+                        <p>Christian D.</p>
+                    </a>
+                    <!-- Despliega ↓ el menú de opciones de perfil -->
+                    <a class="arrow">
+                        <img src="img/icons/arrow-down.svg" alt="↓">
+                    </a>
+                </div>
+                <div class="notification" title="Notificaciones">
+                    <a class="icon">
+                        <img src="img/icons/notification.svg" alt="">
+                        <!-- ↓ cantidad de notificaciones nuevas-->
+                        <span>2</span>
+                    </a>
+                </div>
+                <div class="config" title="Configuración">
+                    <a>
+                        <img src="img/icons/config.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- // Termina barra de los iconos de perfil, notificaión y configuración -->
+            
+        </div>
+        <!-- // Termina Panel de la derecha, donde se abren las notificaciones -->
+    </div>
+</body>
+</html>

@@ -30,6 +30,7 @@
 }
 
 .cont-right {
+    margin-right: -4px;
     margin-top: 15px;
     text-align: center;
     .noti-bar {
@@ -108,6 +109,60 @@
             }
         }
     }
+    .noti-feed {
+        display: none;
+        margin-top: 20px;
+        max-width: 300px;
+        border: 1px solid $medium-gray;
+        border-right: none;
+        -webkit-border-radius: 20px 0 0 20px;
+        border-radius: 20px 0 0 20px;
+        .noti {
+            display: block;
+            border-bottom: 1px solid $medium-gray;
+            padding: 10px;
+            text-align: left;
+            .proj-img {
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                @include border-radius (200px);
+                margin-right: 10px;
+                vertical-align: top;
+            }
+            .proj-name {
+                display: inline-block;
+                width: 220px;
+                margin-right: -4px;
+                vertical-align: top;
+                p {
+                    font-size: 0.9em;
+                }
+                span {
+                    font-size: 0.9em;
+                    font-weight: 600;
+                    display: inline-block;
+                    margin-top: 10px;
+                    img {
+                        margin-top: 2px;
+                        margin-right: 7px;
+                        height: 15px;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+        .noti:last-child {
+            border-bottom: none;
+        }
+        .unread {
+            border-right: 5px solid $yellow;
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -118,8 +173,7 @@
     }
     .cont-main {
         display: inline-block;
-        vertical-align: top;
-        margin-right: -4px;        
+        vertical-align: top;     
     }
     .cont-right {
         display: inline-block;

@@ -33,6 +33,7 @@
     max-width: 270px; }
 
 .cont-right {
+  margin-right: -4px;
   margin-top: 15px;
   text-align: center; }
   .cont-right .noti-bar {
@@ -95,6 +96,54 @@
         height: 20px; }
         .cont-right .noti-bar .config a img {
           height: 100%; }
+  .cont-right .noti-feed {
+    display: none;
+    margin-top: 20px;
+    max-width: 300px;
+    border: 1px solid #A8A8A8;
+    border-right: none;
+    -webkit-border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 0 20px; }
+    .cont-right .noti-feed .noti {
+      display: block;
+      border-bottom: 1px solid #A8A8A8;
+      padding: 10px;
+      text-align: left; }
+      .cont-right .noti-feed .noti .proj-img {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+        -ms-border-radius: 200px;
+        border-radius: 200px;
+        margin-right: 10px;
+        vertical-align: top; }
+      .cont-right .noti-feed .noti .proj-name {
+        display: inline-block;
+        width: 220px;
+        margin-right: -4px;
+        vertical-align: top; }
+        .cont-right .noti-feed .noti .proj-name p {
+          font-size: 0.9em; }
+        .cont-right .noti-feed .noti .proj-name span {
+          font-size: 0.9em;
+          font-weight: 600;
+          display: inline-block;
+          margin-top: 10px; }
+          .cont-right .noti-feed .noti .proj-name span img {
+            margin-top: 2px;
+            margin-right: 7px;
+            height: 15px;
+            display: inline-block;
+            vertical-align: top; }
+    .cont-right .noti-feed .noti:last-child {
+      border-bottom: none; }
+    .cont-right .noti-feed .unread {
+      border-right: 5px solid #F9AF00; }
 
 @media (min-width: 992px) {
   .cont-left {
@@ -103,8 +152,7 @@
     margin-right: -4px; }
   .cont-main {
     display: inline-block;
-    vertical-align: top;
-    margin-right: -4px; }
+    vertical-align: top; }
   .cont-right {
     display: inline-block;
     vertical-align: top;
@@ -231,7 +279,7 @@ form .submit-cont {
     .create-project form .submit-cont button {
       padding: 10px 30px; }
   .create-project form textarea {
-    max-height: 200px; }
+    max-height: 150px; }
   .create-project .guest-group {
     margin-bottom: 20px; }
     .create-project .guest-group .guest {
@@ -375,6 +423,7 @@ form .submit-cont {
   .proj-list .list {
     text-align: left; }
     .proj-list .list .project {
+      font-size: 0.9em;
       padding: 10px 20px;
       border: none;
       background-color: #f1f1f1;
@@ -400,10 +449,16 @@ form .submit-cont {
         vertical-align: middle;
         width: 30%;
         margin: 0;
-        margin-right: 10px; }
+        margin-right: 15px; }
       .proj-list .list .project .actions {
         display: inline-block;
         vertical-align: middle;
         width: 90px;
         margin: 0;
-        margin-right: 10px; } }
+        margin-right: 10px; }
+        .proj-list .list .project .actions a {
+          width: 25px;
+          height: 25px; }
+        .proj-list .list .project .actions a:first-child {
+          height: 22px;
+          margin-right: 10px; } }

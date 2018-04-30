@@ -35,7 +35,7 @@
                     
                     <textarea class="text-input" name="project-description" id="project-description" placeholder="Descripción del proyecto" maxlength="200"></textarea>
                     
-                    <span class="small">Máximo 200 caracteres</span>
+                    <span class="small">Máximo 200 caracteres.</span>
                     
                     <h2>Imagen del proyecto</h2>
                     
@@ -81,9 +81,9 @@
                     </div>
                     
                     <!-- Mensaje de error -->
-                    <p class="error">No encontramos a esta persona, quiza el correo electrónico que escribiste no es correcto.</p>
+                    <p class="error">No encontramos a esta persona, quiza el correo electrónico que escribiste no es el correcto.</p>
                     
-                    <p class="small">Los invitados serán agregados al proyecto en cuanto acepten la invitación</p>
+                    <p class="small">Los invitados serán agregados al proyecto en cuanto acepten la invitación.</p>
                     
                     <div class="submit-cont">
                         <button type="submit">Crear</button>
@@ -125,6 +125,46 @@
                 </div>
             </div>
             <!-- // Termina barra de los iconos de perfil, notificaión y configuración -->
+
+            <!-- Comienza el Feed de notificaciones -->
+            <div class="noti-feed">
+
+                <!-- Comienza Notificación -->
+                <!-- La clase "unread" es para las notificaciones no clickeadas es decir no leídas -->
+                <a href="#" class="noti unread">
+                    <!-- Esta es la imagen del proyecto ↓ de la cual viene la notificación  -->
+                    <div class="proj-img" style="background-image: url('img/photos/profile.jpg')"></div>
+                    <div class="proj-name">
+                        <p>Simulador de procedimientos cardiacos</p>
+                        <!-- Este es el icono ↓ de la notificación -->
+                        <span><img src="img/icons/not-x.svg" alt="">Proyecto cerrado</span>
+                    </div>
+                </a>
+                <!-- // Termina Notificación -->
+                
+                <a href="#" class="noti unread">
+                    <div class="proj-img" style="background-image: url('img/photos/profile.jpg')"></div>
+                    <div class="proj-name">
+                        <p>Simulador de procedimientos cardiacos</p>
+                        <span><img src="img/icons/not-newuser.svg" alt="">Nuevo colaborador</span>
+                    </div>
+                </a>
+                <a href="#" class="noti">
+                    <div class="proj-img" style="background-image: url('img/photos/profile.jpg')"></div>
+                    <div class="proj-name">
+                        <p>Simulador de procedimientos cardiacos</p>
+                        <span><img src="img/icons/not-userleft.svg" alt="">Retiro de colaborador</span>
+                    </div>
+                </a>
+                <a href="#" class="noti">
+                    <div class="proj-img" style="background-image: url('img/photos/profile.jpg')"></div>
+                    <div class="proj-name">
+                        <p>Simulador de procedimientos cardiacos</p>
+                        <span><img src="img/icons/not-input.svg" alt="">Nueva contribución</span>
+                    </div>
+                </a>
+            </div>
+            <!-- // Termina el feed de notificaciones -->
             
         </div>
         <!-- // Termina Panel de la derecha, donde se abren las notificaciones -->
