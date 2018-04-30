@@ -10,7 +10,7 @@ Estructura de carpetas:
 
 * __dist__   *archivos finales*
   * __css__  *hojas de estilo*
-  * _img__   *imagenes*
+  * __img__   *imagenes*
     - __icons__   *Iconos de la interfaz*
     - __photos__   *Fotos de perfil, de proyectos*
     - __project-images__   *iconos usados en la selección de imagen de proyecto*
