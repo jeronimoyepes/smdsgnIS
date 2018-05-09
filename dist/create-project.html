@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+    <!-- Esta es la unica pagina en la que esta disponible el HTML para la barra (feed) de notificaciones,
+        esto para evitar duplicarlo innecesariamente en otras -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simdesign: Sistema de información</title>
     <link rel="stylesheet" href="css/main.css">
-    <script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <!-- Comienza Panel izquierdo donde esta el logo el botón de proyectos y el arbol de pasos de un proyecto (en esta pantalla como no hay un proyecto abierto no se muestra el arbol) -->
+        <!-- Comienza Panel izquierdo donde esta el logo el botón de proyectos y el arbol de pasos de un proyecto
+            (en esta pantalla como no hay un proyecto abierto no se muestra el arbol) -->
         <div class="cont-left">
             <div class="logo">
                 <img src="img/logo.svg" alt="Simdesign">
@@ -126,6 +124,8 @@
             </div>
             <!-- // Termina barra de los iconos de perfil, notificaión y configuración -->
 
+
+
             <!-- Comienza el Feed de notificaciones -->
             <div class="noti-feed">
 
@@ -166,8 +166,15 @@
             </div>
             <!-- // Termina el feed de notificaciones -->
             
+
+
         </div>
         <!-- // Termina Panel de la derecha, donde se abren las notificaciones -->
     </div>
 </body>
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </html>

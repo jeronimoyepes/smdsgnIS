@@ -211,6 +211,44 @@ form h2 {
 form .submit-cont {
   text-align: right; }
 
+.guest-group {
+  margin-bottom: 20px; }
+  .guest-group .guest {
+    display: inline-block;
+    padding-right: 10px;
+    margin: 5px 5px 0 0;
+    background-color: #EFEFEF;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px; }
+    .guest-group .guest .profile-pic {
+      width: 20px;
+      height: 20px;
+      margin-right: 2px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    .guest-group .guest .icon {
+      vertical-align: middle;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: -4px; }
+      .guest-group .guest .icon img {
+        margin-top: 2.5px;
+        height: 15px;
+        width: 15px; }
+    .guest-group .guest .name {
+      display: inline-block;
+      font-size: 0.9em; }
+
 .login, .register {
   max-width: 270px;
   margin: 0 auto;
@@ -280,43 +318,6 @@ form .submit-cont {
       padding: 10px 30px; }
   .create-project form textarea {
     max-height: 150px; }
-  .create-project .guest-group {
-    margin-bottom: 20px; }
-    .create-project .guest-group .guest {
-      display: inline-block;
-      padding-right: 10px;
-      margin: 5px 5px 0 0;
-      background-color: #EFEFEF;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-      -ms-border-radius: 100px;
-      border-radius: 100px; }
-      .create-project .guest-group .guest .profile-pic {
-        width: 20px;
-        height: 20px;
-        margin-right: 2px;
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: middle;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        border-radius: 50%; }
-      .create-project .guest-group .guest .icon {
-        vertical-align: middle;
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-right: -4px; }
-        .create-project .guest-group .guest .icon img {
-          margin-top: 2.5px;
-          height: 15px;
-          width: 15px; }
-      .create-project .guest-group .guest .name {
-        display: inline-block;
-        font-size: 0.9em; }
 
 @media (min-width: 992px) {
   .create-project .project-images div {

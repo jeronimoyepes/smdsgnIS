@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simdesign: Sistema de información</title>
     <link rel="stylesheet" href="css/main.css">
-    <script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -59,13 +55,22 @@
                     <h2 id="1">Fase 1 - Identificar</h2>
                     <h3 id="1.1">1.1 Selección de necesidades</h3>
                     <section>
-                        <h4>Observaciones</h4>
+                        <h4>Observaciones  <a href="#" class="add"><img src="img/icons/add-input.svg" alt="+"></a></h4>
+                        <!-- Formulario para agragar contribucion -->
+                        <form class="contrib-coment-form" action="POST">
+                            <textarea name="contrib-text" class="text-input" placeholder="Contribución"></textarea>
+                            <label for="contrib-attached">Choose images to upload (PNG, JPG)</label>
+                            <input id="contrib-attached" type="file" name="contrib-attached" multiple accept="media_type">
+                            <div class="preview">
+                                <p>No files currently selected for upload</p>
+                            </div>
+                        </form>
                         <div class="contribution">
                             <div class="main">
                                 <div class="text">
                                     
                                 </div>
-                                <div class="comment">
+                                <div class="comments">
 
                                 </div>
                             </div>
@@ -111,4 +116,9 @@
         <!-- // Termina Panel de la derecha, donde se abren las notificaciones -->
     </div>
 </body>
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </html>
