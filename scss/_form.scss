@@ -26,6 +26,15 @@ form {
         letter-spacing: 0.01em;
         cursor: pointer;
     }
+    .submit-icon {
+        padding: 0!important;
+        @include border-radius(0);
+        margin: 0!important;
+        background-color: initial!important; 
+        img {
+            width: 25px;
+        }
+    }
     select {
         width: 100% !important;
     }
@@ -45,6 +54,15 @@ form {
     }
     .submit-cont {
         text-align: right;
+    }
+    .preview p {
+        font-size: 0.8em;
+    }
+}
+
+.contrib-coment-form {
+    .attached-label {
+        cursor: pointer;
     }
 }
 

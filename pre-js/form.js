@@ -1,22 +1,28 @@
-var input = $('.contrib-coment-form input');
-var preview = $('.contrib-coment-form .preview');
+var contribAttached = document.querySelector(".contrib-coment-form #contrib-attached");
+var contribPreview = document.querySelector(".contrib-coment-form .preview");
 
-input.style.opacity = 0;input.addEventListener('change', updateImageDisplay);function updateImageDisplay() {
-    while(preview.firstChild) {
-        preview.removeChild(preview.firstChild);
+
+contribAttached.style.opacity = 0;
+
+contribAttached.addEventListener('change', updateImageDisplay);
+
+function updateImageDisplay() {
+
+    while(contribPreview.firstChild) {
+        contribPreview.removeChild(contribPreview.firstChild);
     }
     
-    var curFiles = input.files;
+    var curFiles = contribAttached.files;
+    
     if(curFiles.length === 0) {
         
         var para = document.createElement('p');
-        para.textContent = 'No files currently selected for upload';
-        preview.appendChild(para);
+        contribPreview.appendChild(para);
         
     } else {
         
         var list = document.createElement('ol');
-        preview.appendChild(list);
+        contribPreview.appendChild(list);
         
         for(var i = 0; i < curFiles.length; i++) {
             
@@ -25,16 +31,15 @@ input.style.opacity = 0;input.addEventListener('change', updateImageDisplay);fun
             
             if(validFileType(curFiles[i])) {
 
-                para.textContent = 'File name ' + curFiles[i].name + ', file size ' + returnFileSize(curFiles[i].size) + '.';
+                para.textContent = curFiles[i].name + ', Tamaño ' + returnFileSize(curFiles[i].size) + '.';
                 var image = document.createElement('img');
                 image.src = window.URL.createObjectURL(curFiles[i]);
                 
-                listItem.appendChild(image);
                 listItem.appendChild(para);
                 
             } else {
 
-                para.textContent = 'File name ' + curFiles[i].name + ': Not a valid file type. Update your selection.';
+                para.textContent = curFiles[i].name + ': Archivo no permitido, solo: .jpg .png .pdf .docx .xlsx .pptx .pps';
                 listItem.appendChild(para);
                 
             }
@@ -47,7 +52,12 @@ input.style.opacity = 0;input.addEventListener('change', updateImageDisplay);fun
 var fileTypes = [
     'image/jpeg',
     'image/pjpeg',
-    'image/png'
+    'image/png',
+    'application/pdf',
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'application/vnd.ms-powerpoint',
+    'application/vnd.openxmlformats-officedocument.presentationml.presentation',
 ]
 
 function validFileType(file) {

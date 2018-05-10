@@ -191,6 +191,17 @@ form button[type=submit] {
   letter-spacing: 0.01em;
   cursor: pointer; }
 
+form .submit-icon {
+  padding: 0 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  margin: 0 !important;
+  background-color: initial !important; }
+  form .submit-icon img {
+    width: 25px; }
+
 form select {
   width: 100% !important; }
 
@@ -210,6 +221,12 @@ form h2 {
 
 form .submit-cont {
   text-align: right; }
+
+form .preview p {
+  font-size: 0.8em; }
+
+.contrib-coment-form .attached-label {
+  cursor: pointer; }
 
 .guest-group {
   margin-bottom: 20px; }

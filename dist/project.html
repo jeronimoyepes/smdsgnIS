@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simdesign: Sistema de información</title>
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
     <div class="wrapper">
@@ -59,11 +58,14 @@
                         <!-- Formulario para agragar contribucion -->
                         <form class="contrib-coment-form" action="POST">
                             <textarea name="contrib-text" class="text-input" placeholder="Contribución"></textarea>
-                            <label for="contrib-attached">Choose images to upload (PNG, JPG)</label>
+
+                            <label for="contrib-attached" class="attached-label" title="Adjuntar archivo"><img src="img/icons/attach.svg" alt="attach"></label>
                             <input id="contrib-attached" type="file" name="contrib-attached" multiple accept="media_type">
+
                             <div class="preview">
-                                <p>No files currently selected for upload</p>
                             </div>
+
+                            <button class="submit-icon" type="submit" title="Enviar"><img src="img/icons/send.svg" alt="Enviar"></button>
                         </form>
                         <div class="contribution">
                             <div class="main">
