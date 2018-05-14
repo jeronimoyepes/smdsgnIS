@@ -22,7 +22,7 @@ $(window).resize(function () {
         resizeMainCont (0);
     }else {
         $(".cont-main").width("initial");
-    };
+    }
     changeContRightPosition();
 });
 

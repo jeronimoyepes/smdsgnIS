@@ -11,7 +11,7 @@ var concat = require('gulp-concat');
 gulp.task('scss', function () {
   console.log('scss');
 	return gulp.src('./scss/**/*.scss')
-	.pipe(sass.sync().on('error', sass.logError))
+  .pipe(sass.sync().on('error', sass.logError))
 	.pipe(gulp.dest('dist/css'))
 });
 

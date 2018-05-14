@@ -54,26 +54,61 @@
                     <h2 id="1">Fase 1 - Identificar</h2>
                     <h3 id="1.1">1.1 Selección de necesidades</h3>
                     <section>
-                        <h4>Observaciones  <a href="#" class="add"><img src="img/icons/add-input.svg" alt="+"></a></h4>
+                        <h4>Observaciones  <a><img src="img/icons/add-input.svg" alt="+"></a></h4>
                         <!-- Formulario para agragar contribucion -->
                         <form class="contrib-coment-form" action="POST">
                             <textarea name="contrib-text" class="text-input" placeholder="Contribución"></textarea>
-
-                            <label for="contrib-attached" class="attached-label" title="Adjuntar archivo"><img src="img/icons/attach.svg" alt="attach"></label>
-                            <input id="contrib-attached" type="file" name="contrib-attached" multiple accept="media_type">
-
-                            <div class="preview">
+                            
+                            <div class="actions">
+                                <label for="contrib-attached" class="attached-label" title="Adjuntar archivo"><img src="img/icons/attach.svg" alt="attach"></label>
+                                <input id="contrib-attached" class="contrib-attached" type="file" name="contrib-attached" multiple accept="media_type">
+                                
+                                <button class="submit-icon" type="submit" title="Enviar"><img src="img/icons/send.svg" alt="Enviar"></button>
                             </div>
-
-                            <button class="submit-icon" type="submit" title="Enviar"><img src="img/icons/send.svg" alt="Enviar"></button>
                         </form>
                         <div class="contribution">
-                            <div class="main">
-                                <div class="text">
-                                    
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea 
+                                </p>
+                                <div class="attached">
+                                    <a href="#" class="file"><img src="img/icons/file.svg" alt=""><span>Nombre del archivo</span></a>
+                                    <a href="#" class="file"><img src="img/icons/file.svg" alt=""><span>Nombre del archivo</span></a>
+                                    <a href="#" class="file"><img src="img/icons/file.svg" alt=""><span>Nombre del archivo</span></a>
                                 </div>
-                                <div class="comments">
-
+                                <a class="user" href="#">Jerónimo Y.</a>
+                                <div class="contrib-actions">
+                                    <a class="comment"><img src="img/icons/comments.svg" alt="Comment">12</a>
+                                    <a class="star"><img src="img/icons/star.svg" alt="star"></a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <form class="contrib-coment-form" action="POST">
+                                    <textarea name="contrib-text" class="text-input" placeholder="Comentario"></textarea>
+                                    
+                                    <div class="actions">
+                                        <label for="contrib-attached" class="attached-label" title="Adjuntar archivo"><img src="img/icons/attach.svg" alt="attach"></label>
+                                        <input id="contrib-attached" class="contrib-attached" type="file" name="contrib-attached" multiple accept="media_type">
+                                        
+                                        <button class="submit-icon" type="submit" title="Enviar"><img src="img/icons/send.svg" alt="Enviar"></button>
+                                    </div>
+                                </form>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                    </p>
+                                    <div class="attached">
+                                            <a href="#" class="file"><img src="img/icons/file.svg" alt=""><span>Nombre del archivo</span></a>
+                                            <a href="#" class="file"><img src="img/icons/file.svg" alt=""><span>Nombre del archivo</span></a>
+                                            <a href="#" class="file"><img src="img/icons/file.svg" alt=""><span>Nombre del archivo</span></a>
+                                    </div>
+                                    <a href="#" class="user">Santiago A.</a>
+                                </div>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                    </p>
+                                    <div class="attached">
+                                    </div>
+                                    <a href="#" class="user">Jerónimo Y.</a>
                                 </div>
                             </div>
                         </div>

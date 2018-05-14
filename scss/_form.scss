@@ -61,8 +61,26 @@ form {
 }
 
 .contrib-coment-form {
+    margin-bottom: 30px;
+    .contrib-attached {
+        display: none;
+    }
     .attached-label {
         cursor: pointer;
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    .submit-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .actions {
+        text-align: right;
     }
 }
 

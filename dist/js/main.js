@@ -1,1 +1,49 @@
-var contribAttached=document.querySelector(".contrib-coment-form #contrib-attached"),contribPreview=document.querySelector(".contrib-coment-form .preview");function updateImageDisplay(){for(;contribPreview.firstChild;)contribPreview.removeChild(contribPreview.firstChild);var e=contribAttached.files;if(0===e.length){var t=document.createElement("p");contribPreview.appendChild(t)}else{var i=document.createElement("ol");contribPreview.appendChild(i);for(var n=0;n<e.length;n++){var o=document.createElement("li");t=document.createElement("p");if(validFileType(e[n]))t.textContent=e[n].name+", Tamaño "+returnFileSize(e[n].size)+".",document.createElement("img").src=window.URL.createObjectURL(e[n]),o.appendChild(t);else t.textContent=e[n].name+": Archivo no permitido, solo: .jpg .png .pdf .docx .xlsx .pptx .pps",o.appendChild(t);i.appendChild(o)}}}contribAttached.style.opacity=0,contribAttached.addEventListener("change",updateImageDisplay);var fileTypes=["image/jpeg","image/pjpeg","image/png","application/pdf","application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","application/vnd.ms-powerpoint","application/vnd.openxmlformats-officedocument.presentationml.presentation"];function validFileType(e){for(var t=0;t<fileTypes.length;t++)if(e.type===fileTypes[t])return!0;return!1}function returnFileSize(e){return e<1024?e+"bytes":1024<=e&&e<1048576?(e/1024).toFixed(1)+"KB":1048576<=e?(e/1048576).toFixed(1)+"MB":void 0}$(".notification").click(function(){$(".noti-feed").slideToggle(300)});var mediaQueryTablet=991;function resizeMainCont(e){$(".cont-main").width(function(){return $(".wrapper").width()-($(".cont-left").width()+$(".cont-right").width())-e})}function changeContRightPosition(){$(window).width()<=mediaQueryTablet?$(".cont-right").insertBefore($(".cont-main")):$(".cont-right").insertAfter($(".cont-main"))}resizeMainCont(0),changeContRightPosition(),$(window).resize(function(){$(window).width()>=mediaQueryTablet?resizeMainCont(0):$(".cont-main").width("initial"),changeContRightPosition()}),setInterval(function(){$(window).width()>mediaQueryTablet?resizeMainCont(0):$(".cont-main").width("initial")},100);
+// Toggle de la barra de notificaciones
+$(".notification").click(function () {
+        $(".noti-feed").slideToggle(300);
+});
+
+// Toggle de los comentarios en las contribuciones
+$(".contrib-actions .comment").click(function () {
+        $(this).parents(".text").siblings(".comments").slideToggle(300);
+});
+
+// Toggle de formulario para nueva contribucion
+$("section h4 a").click(function () {
+        $(this).parents().siblings(".contrib-coment-form").slideToggle(300);
+});
+
+var mediaQueryTablet = 991;
+
+// Hacer que el contenedor del contenido principal sea igual al ancho de la ventana menos el ancho de los contenedores de los lados
+function resizeMainCont (offset) {
+    $(".cont-main").width(function () {
+        return $(".wrapper").width() - ($(".cont-left").width() + $(".cont-right").width()) - offset;
+    });
+} resizeMainCont (0);
+
+function changeContRightPosition () {
+    if ($(window).width() <= mediaQueryTablet) {
+        $(".cont-right").insertBefore($(".cont-main"));
+    }else {
+        $(".cont-right").insertAfter($(".cont-main"));
+    }
+} changeContRightPosition ();
+
+// registrar el cambio de tamaño de la pantalla
+$(window).resize(function () {
+    if ($(window).width() >= mediaQueryTablet) {
+        resizeMainCont (0);
+    }else {
+        $(".cont-main").width("initial");
+    }
+    changeContRightPosition();
+});
+
+setInterval(function () {
+    if ($(window).width() > mediaQueryTablet) { 
+        resizeMainCont (0);
+    } else {
+        $(".cont-main").width("initial");
+    }
+}, 100);
