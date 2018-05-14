@@ -10,7 +10,7 @@ function resizeMainCont (offset) {
 
 function changeContRightPosition () {
     if ($(window).width() <= mediaQueryTablet) {
-        $(".cont-right").insertBefore($(".cont-main"));
+        $(".cont-right").insertBefore($(".cont-left"));
     }else {
         $(".cont-right").insertAfter($(".cont-main"));
     }

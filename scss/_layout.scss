@@ -4,7 +4,6 @@
 }
 
 .cont-left {
-    width: 250px;
     overflow: hidden;
     margin-bottom: 20px;
     .logo {
@@ -23,6 +22,51 @@
         -webkit-border-radius: 0 100px 100px 0;
         border-radius: 0 100px 100px 0;
         max-width: 270px;
+        margin-bottom: 20px;
+    }
+    .proj-menu {
+        border: 1px solid $medium-gray;
+        border-right: none;
+        border-left: none;
+        text-align: center;
+        padding: 20px 10px 0 10px;
+        .title {
+            margin-bottom: 30px;
+            .image {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                @include border-radius (200px);
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            h2 {
+                display: inline-block;
+                max-width: 170px;
+                vertical-align: middle;
+                font-size: 1.05em;
+                font-weight: 400;
+            }
+        }
+        ol {
+            margin-bottom: 30px;
+            .fase {
+                font-weight: 600;
+                margin-bottom: 10px;
+            } 
+            .sub {
+                li {
+                    padding-left: 10px;
+                    a {
+                        display: block;
+                        padding: 3px 0;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -163,6 +207,13 @@
         display: inline-block;
         vertical-align: top;
         margin-right: -4px;
+        width: 250px;
+        .proj-menu {
+            text-align: left;
+            -webkit-border-radius: 0 25px 25px 0s;
+            border-radius: 0 25px 25px 0;
+            border-right: 1px solid $medium-gray;
+        }
     }
     .cont-main {
         display: inline-block;
